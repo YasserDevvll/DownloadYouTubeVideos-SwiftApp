@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
-//  YTDownloader
+//  AppDelegate.swift
+//  GetProject
 //
-//  Created by BandarHelal on 19/01/2019.
-//  Copyright © 2019 BandarHelal. All rights reserved.
+//  Created by YasserDeev on 19/01/2019.
+//  Copyright © 2019 YasserDeev. All rights reserved.
 //
 
 import UIKit
@@ -26,16 +26,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let FormatMP4  = "mp4"
     let FormatWEB  = "webm"
     let Format3GPP = "3gpp"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        bannerView.adUnitID = "ca-app-pub-2502501640180711/8760771556"
+        bannerView.adUnitID = ""
         bannerView.rootViewController = self
         bannerView.delegate = self
         bannerView.load(GADRequest())
         
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-2502501640180711/2505019237")
+        interstitial = GADInterstitial(adUnitID: "")
         interstitial.load(GADRequest())
         interstitial.delegate = self
         
@@ -47,6 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         VideoText.delegate = self
     }
+   
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)

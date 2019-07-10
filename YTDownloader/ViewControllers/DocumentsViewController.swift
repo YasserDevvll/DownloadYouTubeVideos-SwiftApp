@@ -1,9 +1,9 @@
 //
-//  DocumentsViewController.swift
-//  YTDownloader
+//  AppDelegate.swift
+//  GetProject
 //
-//  Created by BandarHelal on 05/02/2019.
-//  Copyright © 2019 BandarHelal. All rights reserved.
+//  Created by YasserDeev on 19/01/2019.
+//  Copyright © 2019 YasserDeev. All rights reserved.
 //
 
 import UIKit
@@ -23,7 +23,7 @@ class DocumentsViewController: UIViewController {
     var FolderNameSelected      : String?
     var bannerView              : GADBannerView!
     let infoPlistPath           = Bundle.main.infoDictionary
-    var profileimage            = URL(string: "https://twitter.com/BandarHL/profile_image?size=bigger")
+    let profileimage            = URL(string:  "https://twitter.com/YasserDeev/profile_image?size=bigger")
     var profileimage2           = URL(string: "https://twitter.com/AmeerDesgin/profile_image?size=bigger")
     let bhalert                 = BHAlert()
     let BHConvertSwift          = BHConverting()
@@ -105,7 +105,7 @@ class DocumentsViewController: UIViewController {
     
     
     func randomString(length: Int) -> String {
-        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        let letters = ""
         return String((0...length-1).map{ _ in letters.randomElement()! })
     }
     
@@ -176,16 +176,16 @@ class DocumentsViewController: UIViewController {
         
         if Reachability.isConnectedToNetwork() {
             let DataImage = try? Data(contentsOf: profileimage! as URL)
-            let BandarHL = FRPDeveloperCell(title: "BandarHelal", detail: "@BandarHL", image: UIImage(data: DataImage!), url: "https://twitter.com/BandarHL")
+            let BandarHL = FRPDeveloperCell(title: "YasserDeev", detail: "@YasserDeev", image: UIImage(data: DataImage!), url: "https://twitter.com/YasserDeev")
             
             let DataImage2 = try? Data(contentsOf: profileimage2! as URL)
             let Ameer = FRPDeveloperCell(title: "Ameer 👨‍🎨", detail: "@AmeerDesgin", image: UIImage(data: DataImage2!), url: "https://twitter.com/AmeerDesgin")
             section2?.addCells([BandarHL!])
             section3?.addCells([Ameer!])
         } else {
-            let BandarHL = FRPDeveloperCell(title: "BandarHelal", detail: "@BandarHL", image: UIImage(named: "BandarHL.png"), url: "https://twitter.com/BandarHL")
+            let YasserDeev = FRPDeveloperCell(title: "YasserDeev", detail: "@YasserDeev", image: UIImage(named: "YasserDeev.png"), url: "https://twitter.com/YasserDeev")
             let Ameer = FRPDeveloperCell(title: "Ameer 👨‍🎨", detail: "@AmeerDesgin", image: UIImage(named: "ameer.png"), url: "https://twitter.com/AmeerDesgin")
-            section2?.addCells([BandarHL!])
+            section2?.addCells([YasserDeev!])
             section3?.addCells([Ameer!])
         }
         

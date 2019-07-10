@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  GetProject
 //
-//  Created by BandarHelal on 19/01/2019.
-//  Copyright © 2019 BandarHelal. All rights reserved.
+//  Created by YasserDeev on 19/01/2019.
+//  Copyright © 2019 YasserDeev. All rights reserved.
 //
 
 import UIKit
@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-2502501640180711~2738164978")
+        GADMobileAds.configure(withApplicationID: "")
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .defaultToSpeaker)
         } catch {
@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         
         
-        if shortcutItem.type == "com.BandarHL.YTDownloader.Share" {
+        if shortcutItem.type == "com.YasserDeev.YTDownloader.Share" {
             
             UIApplication.shared.open(URL(string: "twitter://post?message=i'm%20using%20YTDownloader%20for%20download%20youtube%20videos")!, options: [:], completionHandler: nil)
             

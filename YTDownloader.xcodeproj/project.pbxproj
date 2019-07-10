@@ -52,7 +52,6 @@
 		508A763B221DFE7300F87F6F /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508A763A221DFE7300F87F6F /* nanopb.framework */; };
 		508D21912209F6E5001643E6 /* DocumentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D21902209F6E5001643E6 /* DocumentsTableViewCell.swift */; };
 		508D21952209F753001643E6 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D21942209F753001643E6 /* DocumentsViewController.swift */; };
-		509E6B6122201EF600910337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 509E6B6022201EF600910337 /* GoogleService-Info.plist */; };
 		50DF274C225D140700A9AC73 /* BHUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DF274B225D140700A9AC73 /* BHUtilities.m */; };
 /* End PBXBuildFile section */
 
@@ -112,7 +111,6 @@
 		508A763A221DFE7300F87F6F /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		508D21902209F6E5001643E6 /* DocumentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsTableViewCell.swift; sourceTree = "<group>"; };
 		508D21942209F753001643E6 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
-		509E6B6022201EF600910337 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50DF2748225D123600A9AC73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50DF274A225D140700A9AC73 /* BHUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHUtilities.h; sourceTree = "<group>"; };
 		50DF274B225D140700A9AC73 /* BHUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHUtilities.m; sourceTree = "<group>"; };
@@ -184,8 +182,8 @@
 		5045A03B21F331C8009234E9 /* YTDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				509095E2220E280B00660503 /* Helpers */,
 				509095E1220E27C200660503 /* ViewControllers */,
+				509095E2220E280B00660503 /* Helpers */,
 				5045A03C21F331C8009234E9 /* AppDelegate.swift */,
 				5045A04021F331C8009234E9 /* Main.storyboard */,
 				5045A04321F331CB009234E9 /* Assets.xcassets */,
@@ -193,7 +191,6 @@
 				5028E951221703E00041FA2B /* YTDownloader-Bridging-Header.h */,
 				5045A04821F331CB009234E9 /* Info.plist */,
 				508659DB221882C900E5A2A1 /* Licenses.plist */,
-				509E6B6022201EF600910337 /* GoogleService-Info.plist */,
 			);
 			path = YTDownloader;
 			sourceTree = "<group>";
@@ -354,7 +351,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = BandarHelal;
+				ORGANIZATIONNAME = YasserDeev;
 				TargetAttributes = {
 					5045A03821F331C8009234E9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -442,7 +439,6 @@
 				5045A04721F331CB009234E9 /* LaunchScreen.storyboard in Resources */,
 				5045A04421F331CB009234E9 /* Assets.xcassets in Resources */,
 				504A7989223188A200D6361B /* YoutubeParserBridge.html in Resources */,
-				509E6B6122201EF600910337 /* GoogleService-Info.plist in Resources */,
 				508659DC221882C900E5A2A1 /* Licenses.plist in Resources */,
 				5045A04221F331C8009234E9 /* Main.storyboard in Resources */,
 			);
@@ -616,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -672,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -690,7 +686,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8JMV3RHX32;
+				DEVELOPMENT_TEAM = 5H67M9YMSV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YTDownloader/Helpers/vlc-ios-master/Pods/MobileVLCKit",
@@ -706,7 +702,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BandarHL.YTDownloader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasserDeev.YTDownloaderr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "YTDownloader/YTDownloader-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -723,7 +719,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8JMV3RHX32;
+				DEVELOPMENT_TEAM = 5H67M9YMSV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YTDownloader/Helpers/vlc-ios-master/Pods/MobileVLCKit",
@@ -739,7 +735,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BandarHL.YTDownloader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasserDeev.YTDownloaderr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "YTDownloader/YTDownloader-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
